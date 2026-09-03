@@ -1,0 +1,16 @@
+numpy
+pandas
+SimpleITK
+tqdm
+monai
+torch
+torchvision
+matplotlib
+nnunetv2
+fvcore
+pydicom
+ipykernel
+notebook 
+nnunetv2 #only if u want to train nnunetv2 models
+jupyter
+opencv-python
