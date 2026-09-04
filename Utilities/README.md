@@ -7,7 +7,7 @@ A collection of operational scripts designed for dataset preprocessing, spatial 
 ├── big_lesion_test.py                # Diagnostic test for rectangular blob artifacts caused by nearest-neighbor resampling   
 ├── generate_dataset_for_reporting.py  # Dataset generation utility to resample CT scans at various voxel spacings   
 ├── model_sanity_check.py             # Performance check utility to evaluate model output across different configurations   
-├── overfit_check.py                  # Diagnostic script to overfit the model on 10 batches (Cache/Live mode) 
+├── overfit_check.py                  # Diagnostic script to overfit the model on 10 batches (Cache/Live mode)   
 ├── Visualize_Bottleneck.py                  # Use it Visualize the bottlenck layer stored for every few epochs    
 └── update_splits.py                  # Utility script to remap dataset paths for training on remote GPU servers
 
