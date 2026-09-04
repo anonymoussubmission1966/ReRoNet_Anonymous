@@ -23,7 +23,7 @@ The project uses the public **Stanford COCA Dataset**.
 All core implementation and training scripts are located in the `Segmentation/` folder.
 ```bash
 # It is recommended to use a virtual environment
-python -m venv meenv
+python -m venv myenv
 #source venv/bin/activate  # Linux/Mac
  venv\Scripts\activate   # Windows
 
@@ -60,6 +60,15 @@ The `wrapper.py` script provides a high-level interface for deploying the model 
 ### Qualitative Results
 
 ![Qualitative Results](Paper_Images/top_3_qualitative.png)
+
+#### Spectral Delta Visualizations
+These images illustrate the 3D spatial activation delta fields ($\delta_c$) across the bottleneck operator, highlighting the impact of coordinate encodings.
+
+| ReRo-Net (Full) | ReRo-Net (w/o CoordConv) |
+| :---: | :---: |
+| ![Full](Paper_Images/run_fno.png) | ![No Coord](Paper_Images/run_no_coord.png) |
+| *Absolute coordinate encodings (CoordConv) anchor representations to rigid grid planes.* | *Removing CoordConv enables the spectral bottleneck to learn relative, continuously bounded spatial features.* |
+
 
 ### Cluster Analysis
 
